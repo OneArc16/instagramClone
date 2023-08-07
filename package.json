@@ -13,7 +13,8 @@
     "eslint-config-next": "13.4.13",
     "next": "13.4.13",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-lottie-player": "^1.5.4"
   },
   "main": "index.js",
   "repository": "https://github.com/OneArc16/instagramClone.git",
