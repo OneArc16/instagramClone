@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsThreeDots } from 'react-icons/bs'
 
-const Post = ({index}) => {
+const Post = ({postIndex}) => {
   return (
     <div className="flex flex-col w-full border-gray-100 border max-h-72">
          <div className="flex w-full p-2 justify-between items-center">
@@ -41,7 +41,7 @@ const Post = ({index}) => {
         <div>
             <div>face emoji</div>
             <div>
-                <input type='text' name='comment' id={`comment ${index}`} />
+                <input type='text' name='comment' id={`comment ${postIndex}`} />
             </div>
             <div></div>
         </div>

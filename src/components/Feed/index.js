@@ -19,7 +19,7 @@ const Feed = () => {
       <section className="gap-y-3 flex flex-col">
          {
           new Array(5).fill(1).map((_, i) =>(
-            <Post key={i} index={i}/>
+            <Post key={i} postIndex={i}/>
           ))
          }
       </section>
