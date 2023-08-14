@@ -1,4 +1,6 @@
+import { BsThreeDots } from "react-icons/bs";
 import Header from "../Header";
+import Post from "../Post";
 
 const Feed = () => {
   return (
@@ -14,24 +16,12 @@ const Feed = () => {
             ))
           }
         </section>
-      <section className="">
-        <div className="flex flex-col w-full border border-gray-100 bg-black/50 border-1 max-h-72">
-          <div className="flex w-full p-1 space-x-2 bg-pink-400 justify-between items-center">
-            <div className="flex items-center justify-center space-x-2">
-              <div className="w-10 h-10 bg-gray-400 border-2 border-pink-400 rounded-full" />
-              <div>Username</div>
-            </div>
-            <div className="w-4 select-none">...</div>
-          </div>
-          <div className="w-full h-full bg-black aspect-square">
-
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      <section className="gap-y-3 flex flex-col">
+         {
+          new Array(5).fill(1).map((_, i) =>(
+            <Post key={i}/>
+          ))
+         }
       </section>
     </div>
 
