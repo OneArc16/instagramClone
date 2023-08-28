@@ -38,7 +38,7 @@ const HEADER_ITEMS = [
 
 const Header = () => {
   return (
-    <header className='flex items-center justify-around w-full h-16 bg-white shadow-md'>
+    <header className='fixed top-0 z-10 flex items-center justify-around w-full h-16 bg-white shadow-md '>
     <Link href="/">
       <div className='text-xl font-semibold tracking-wider cursor-pointer select-none'>Instagram</div>
     </Link>
