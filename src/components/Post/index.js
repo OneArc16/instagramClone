@@ -3,8 +3,8 @@ import { BsThreeDots } from 'react-icons/bs'
 
 const Post = ({postIndex}) => {
   return (
-    <div className="flex flex-col w-full border-gray-100 border max-h-72">
-         <div className="flex w-full p-2 justify-between items-center">
+    <div className="flex flex-col w-full border border-gray-100 max-h-72">
+         <div className="flex items-center justify-between w-full p-2">
         <div className="flex items-center justify-center space-x-2">
             <div className="w-10 h-10 bg-black border-2 rounded-full" />
             <div>Username</div>
