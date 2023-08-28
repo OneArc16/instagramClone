@@ -1,6 +1,6 @@
 import {BsSearch} from 'react-icons/bs'
 import {Add, Cross, Home, Heart, Messenger, Search, Compass, Profile} from '../Header/HeaderIcons';
-import HeaderIcon from '../Header/Headericon';
+import HeaderIcon from './HeaderIcon';
 import Link from 'next/link';
 
 const HEADER_ITEMS = [
