@@ -6,7 +6,7 @@ import { IoShareOutline } from 'react-icons/io5'
 
 const Post = ({postIndex}) => {
   return (
-    <div className="flex flex-col w-full border border-gray-100 max-h-72">
+    <div className="flex flex-col w-full border border-gray-200">
          <div className="flex items-center justify-between w-full p-2">
         <div className="flex items-center justify-center space-x-2">
             <div className="w-10 h-10 bg-black border-2 rounded-full" />
@@ -14,7 +14,7 @@ const Post = ({postIndex}) => {
         </div>
         <div className="w-4 select-none"><BsThreeDots className="text-lg"/></div>
         </div>
-        <div className="w-full h-full bg-black aspect-square"></div>
+        <div className="bg-black w-FULL h-FULL aspect-square"></div>
         <div className='flex justify-between p-2 text-lg'>
             <div className='flex space-x-2'>
                 <div>
