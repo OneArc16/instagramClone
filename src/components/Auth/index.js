@@ -51,8 +51,9 @@ const Auth = () => {
               </div>
               {isLoginForm && <div className='w-full text-xs text-center text-indigo-900'>Forgotten your password?</div>}
           </div>
-          <div className='w-full py-5 space-y-5 text-sm text-center bg-white border border-gray-300'>{isLoginForm ? 'Don&apos;t have an account?' : 'Already haven an account!'}</div>
-          <span className='ml-2 font-semibold text-indigo-600'>{isLoginForm ? 'Sign Up' : 'Login'}</span>
+          <div className='w-full py-5 space-y-5 text-sm text-center bg-white border border-gray-300'>{isLoginForm ? 'Don&apos;t have an account?' : 'Already haven an account'}
+          <button onClick={() => setIsLoginForm((prev) => !prev)} className='ml-2 font-semibold text-indigo-600'>{isLoginForm ? 'Sign Up' : 'Login'}</button>
+          </div>
         </div>
       </div>
     </div>
