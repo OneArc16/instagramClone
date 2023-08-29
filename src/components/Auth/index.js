@@ -1,11 +1,14 @@
 import Lottie from 'react-lottie-player'
 import AuthAnimation from '../../../public/assets/animations/auth-page-animation.json'
 import useForm from '@/hooks/useForm'
-import { useMemo } from 'react'
+import { useContext, useMemo } from 'react'
 import {AiFillFacebook} from 'react-icons/ai';
+import { GlobalContext } from '@/state/context/GlobalContext';
 
 
 const Auth = () => {
+
+  const state = useContext(GlobalContext)
 
   const {form, onChangeHandler} = useForm({
     email: '',

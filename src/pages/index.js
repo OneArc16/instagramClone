@@ -1,10 +1,11 @@
 import Auth from "@/components/Auth"
 import Feed from "@/components/Feed"
-import { useState } from "react"
+import { GlobalContext } from "@/state/context/GlobalContext"
+import { useContext, useState } from "react"
 
 const HomePage = () => {
 
-  const [isAuthenticated, setIsAuthenticated] = useState(true)
+  const {isAuthenticated} = useContext(GlobalContext)
 
   return isAuthenticated ? <Feed/> : <Auth/>
 }
